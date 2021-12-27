@@ -1,0 +1,145 @@
+<!-- <div class="container-fluid"> -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand ml-5" href="#"><h1 style="font-size: 2vw;">Angular</h1></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"><strong style="font-size: 1.5vw;">Home</strong> <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><strong  style="font-size: 1.5vw;">About</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><strong  style="font-size: 1.5vw;">Contact</strong></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:150px 16px">
+  <h1 style="font-size: 10vw;">WebSocket</h1>
+  <button class="btn btn-primary" (click)='connectWS()'><h5 style="font-size: 1.5vw;">Connet</h5></button>
+  <button class="btn btn-dark"(click)="disconnectWS()"><h5 style="font-size: 1.5vw;">Disconnet</h5></button>
+</header>
+
+<!-- First Grid -->
+    <div class="row mt-5">
+      <div class="col-12">
+        <div class="labelBar">
+            <h1 class="ltp" style="font-size: 2vw;text-align: center; padding-top: 2vh;" id="LTP">LatestTradedPrice</h1>
+            <div id="thermo"></div>
+        </div>
+      </div>
+    </div>
+  <div class="row inputEvents">
+    <div class="col-6 inputBox">
+      <h1 style="font-size: 2vw; text-align: center;">Add Labels and Values</h1>
+      <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+        <input type="text" id="label" maxlength="4" name="labels" class="form-control" placeholder="enter the label"
+          formControlName="labels" required>
+        <input type="number" id="value" name="value" class="form-control" placeholder="enter the value"
+          formControlName="value" required>
+        <button class="btn btn-primary w-100">submit</button>
+      </form>
+    </div>
+    <div class="col-6">
+      <div class="anyClass">
+        <div>
+          <span style="font-size: 1.2vw;margin: 5px;" class="badge badge-secondary" *ngFor="let value of inputData;let i=index">
+            {{value.labels}} {{value.value}}
+            <span style="cursor: pointer;text-align: center;align-items: center;" class="badge badge-light"><a (click)="onDelete(i)">x</a></span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Second Grid -->
+
+    <div class="row textChart">
+      <div class="col-8">
+        <div class="barDiv">
+        <div id="barChart"><h1 style="text-align: center;font-size: 2vw;padding: 20px 0px;">Bar Graph</h1>
+          <h3 id="openVolume" style="font-size: 1.5vw; color: white;"></h3>
+          <h3 id="referenceValue" style="font-size: 1.5vw;color: white;"></h3></div>
+      </div>
+      </div>
+      <div class="col-4">
+      <div class="ibvalues">
+        <h1 id="newIB" style="font-size: 2vw;">InitialBalance</h1>
+          <ul class="values" style="font-size:1.5vw">
+            <li style="color: blue;" id="IBHIGH"></li>
+            <li id="IB15UP"></li>
+            <li id="IB2UP"></li>
+            <li id="IB3UP"></li>
+            <li style="color: blue;"  id="IBLOW"></li>
+            <li id="IB15DOWN"></li>
+            <li id="IB2DOWN"></li>
+            <li id="IB3DOWN"></li>
+          </ul>
+          <div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+<!-- third Grid -->
+
+    <div class="row mt-5">
+      <div class="col-12">
+       <div class="horizontalBar" id="horizontal-bar"><h1 style="font-size: 2vw; text-align: center;padding-top: 3vh;">Tpo Volume Profile</h1></div>
+      </div>
+    </div>
+
+
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-white mx-auto">
+  <!-- Grid container -->
+  <div class="container p-1">
+    <!-- Section: Social media -->
+    <section class="mb-2">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="bi bi-instagram"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="bi bi-google"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="bi bi-facebook"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="bi bi-telegram"></i
+      ></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="bi bi-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center copy" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+<!-- </div> -->
+

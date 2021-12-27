@@ -1,0 +1,121 @@
+body{
+  margin: 0%;
+}
+
+.ibvalues{
+  border-radius: 10px;
+  padding: 20px 0px;
+  background-color: rgb(128, 227, 228);
+  box-shadow: 2px 2px 2px 2px rgb(177, 245, 134);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  min-width: 200px;
+  max-height: 100vh;
+}
+.ibvalues .values{
+  color: black;
+  font-weight: normal;
+  display: block;
+  list-style-type: none;
+}
+
+#barChart{
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgb(179, 235, 201);
+  box-shadow: 2px 2px 2px 2px rgb(91, 234, 219);
+  font-family:Arial, Helvetica, sans-serif;
+  min-width: 200px;
+  max-height: 100vh;
+}
+.ltp{
+  padding-left: 20px;
+  color: rgb(65, 65, 201);
+  font-family: cursive;
+}
+.labelBar{
+  background: rgb(245, 242, 242);
+  box-shadow: 2px 2px 2px 2px rgb(207, 207, 207);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 80vw;
+  border-radius: 5px;
+  margin-left: 10vw;
+}
+#thermo{
+  max-height: 100vh;
+}
+.inputBox,input,button{
+  max-width: 20vw;
+  margin: 20px;
+  padding: 2vh;
+ }
+#newIB{
+  color: rgb(255, 0, 0);
+  text-align: center;
+}
+
+.horizontalBar{
+  background: rgb(247, 247, 247);
+  box-shadow: 2px 2px 2px 2px rgb(230, 224, 224);
+  max-width: 80vw;
+  margin-left: 10vw;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  max-height: 100vh;
+}
+.textChart{
+  background: rgb(255, 255, 255);
+  padding: 30px 250px;
+}
+
+.inputEvents{
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  max-width: 80vw;
+  margin-left: 10vw;
+  padding: 0 50px 0 50px;
+  margin-left: 20vw;
+}
+nav{
+  background-color: rgb(244, 63, 63);
+  box-shadow: 2px 3px 10px 5px rgb(205, 63, 63);
+}
+nav li{
+  padding: 0px 30px;
+}
+span{
+  border-radius: 30px;
+}
+
+.anyClass {
+  overflow-y: scroll;
+  max-height: 200px;
+  margin-left: 10vw;
+  margin-top: 70px;
+  min-height: 20vh;
+}
+header button{
+  border-radius: 4em;
+  padding: 10px 40px;
+  font-style: italic;
+}
+form input{
+  font-size: 1.5vw;
+  border-radius: 0.5em;
+}
+form button{
+  font-size: 1.5vw;
+  padding: 10px 20px;
+  border-radius: 0.5em;
+}
+footer a{
+  border: none;
+  padding: 0 20px;
+}
+footer i{
+  font-size: 1.5vw;
+}
+footer .copy{
+  padding: 1vh 0 ;
+  font-size: 1vw;
+}
